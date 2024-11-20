@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body id="body_carne">
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+        <aside id="sub_header">
+            <h2 class="sub_header_title">Food Social</h2>
+        </aside>
+        <form action="#" method="post" id="form_tabua_cadastro">
+            <h2 class="titulo_tabua">Cadastro</h2>
+            <div class="div_campos">
+                <label for="campo_nome" class="label_campos">Nome:</label>
+                <input type="text" name="nome" id="campo_nome" class="campos">
+            </div>
+            <div class="div_campos">
+                <label for="campo_email" class="label_campos">Email:</label>
+                <input type="email" name="email" id="campo_email" class="campos">
+            </div>
+            <div class="div_campos">
+                <label for="campo_telefone" class="label_campos">Telefone:</label>
+                <input type="tel" name="telefone" id="campo_telefone" class="campos">
+            </div>
+            <div class="div_campos">
+                <label for="campo_nascimento" class="label_campos">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="campo_nascimento" class="campos">
+            </div>
+            <div class="div_campos">
+                <label for="campo_senha" class="label_campos">Senha:</label>
+                <input type="text" name="senha" id="campo_senha" class="campos">
+            </div>
+            <div class="div_campos_checkbox">
+                <input type="checkbox" name="vegetariano" id="checkbox_vegetariano" class="checkbox">
+                <label for="checkbox_vegetariano" class="label_checkbox">Vegetariano</label>
+            </div>
+            <div class="div_checkbox">
+                <input type="checkbox" name="alergico" id="checkbox_alergico" class="checkbox">
+                <label for="checkbox_alergico" class="label_checkbox">Sou alérgico</label>
+            </div>
+            <div class="div_checkbox">
+                <input type="checkbox" name="termos" id="checkbox_termos" class="checkbox">
+                <label for="checkbox_termos" class="label_checkbox">Li e concordo com os <a href="#">termos de uso</a></label>
+            <div class="div_campos_btn">
+                <input type="submit" value="Cadastrar" class="btn">
+                <input type="reset" value="Limpar campos" class="btn">
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

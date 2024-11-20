@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#body_carne{
+    background-image: url(../img/plano_de_fundo.webp);
+    background-size: cover;
+}
+
+#body_mesa{
+    background-image: url(../img/fundo-config.jpg);
+    background-size: cover;
+}
+
+#form_tabua_cadastro{
+    margin-left: 150px;
+    background-image: url(../img/tabua_retangular.png);
+    width: 400px;
+    height: 533.5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+#form_config{
+    margin-left: 150px;
+    background-color: #fff;
+    width: 400px;
+    height: 533.5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+#form_tabua_login{
+    margin-left: 150px;
+    background-image: url(../img/tabua_redonda.png);
+    width: 533px;
+    height: 533px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px;
+}
+
+#form_tabua_recuperar_senha{
+    margin-left: 60px;
+    background-image: url(../img/tabua_listrada.png);
+    width: 700px;
+    height: 533px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 130px;
+}
+
+.red_senha_txt{
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: #000 2px 2px 0;
+}
+
+.div_campos{
+    display: flex;
+    flex-direction: column;
+}
+
+.label_campos{
+    color: #000;
+    text-shadow: #fff 1px 1px 1px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.titulo_tabua{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.campos{
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.label_checkbox{
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: #fff 1px 1px 0 ;
+}
+
+.div_campos_btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #6d6d03;
+    color: #fff;
+}
+
+#sub_header{
+    width: 60%;
+    height: 100px;
+    background-image: url(../img/comidas-regionais-tipicas-brasileiras.png);
+    border-radius: 0 30px 30px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#sub_header_config{
+    width: 60%;
+    height: 100px;
+    background-color: #6d6d03ab;
+    border-radius: 0 30px 30px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.opcoes{
+    background-color: #fff;
+    border-top: 2px solid #000;
+    width: 100%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.sub_header_title{
+    position: absolute;
+    right: 5px;
+    background-color: #fff;
+    height: 90px;
+    width: 130px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #6d6d03;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+footer, header{
+    background-color: #6d6d03;
+    height: 30px;
+}
+
+header h1{
+    color: #fff;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    position: absolute;
+    right: 400px;
+}
+
+footer{
+    margin-top: 19px;
+}
