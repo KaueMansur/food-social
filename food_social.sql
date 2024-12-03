@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04/12/2024 às 00:36
+-- Tempo de geração: 04/12/2024 às 00:40
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `food_social`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `receita`
+--
+
+CREATE TABLE `receita` (
+  `id_receita` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `ingredientes` text NOT NULL,
+  `tempo_de_preparo` int(11) DEFAULT NULL,
+  `rendimento` float DEFAULT NULL,
+  `tipo` varchar(30) NOT NULL,
+  `categoria` varchar(30) NOT NULL,
+  `alergias` varchar(50) NOT NULL,
+  `passo_a_passo` text NOT NULL,
+  `imagem` blob NOT NULL,
+  `video` blob DEFAULT NULL,
+  `descricao` text DEFAULT NULL,
+  `clima_para_conservacao` varchar(50) DEFAULT NULL,
+  `validade` int(11) DEFAULT NULL,
+  `tags` varchar(150) DEFAULT NULL,
+  `pessoas_marcadas` int(11) DEFAULT NULL,
+  `vegetariano_vegano` varchar(50) DEFAULT NULL,
+  `privacidade` char(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -44,6 +71,14 @@ CREATE TABLE `usuario` (
 --
 
 --
+-- Índices de tabela `receita`
+--
+ALTER TABLE `receita`
+  ADD PRIMARY KEY (`id_receita`),
+  ADD UNIQUE KEY `nome` (`nome`),
+  ADD KEY `pessoas_marcadas` (`pessoas_marcadas`);
+
+--
 -- Índices de tabela `usuario`
 --
 ALTER TABLE `usuario`
@@ -56,6 +91,12 @@ ALTER TABLE `usuario`
 --
 
 --
+-- AUTO_INCREMENT de tabela `receita`
+--
+ALTER TABLE `receita`
+  MODIFY `id_receita` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
@@ -64,6 +105,12 @@ ALTER TABLE `usuario`
 --
 -- Restrições para tabelas despejadas
 --
+
+--
+-- Restrições para tabelas `receita`
+--
+ALTER TABLE `receita`
+  ADD CONSTRAINT `receita_ibfk_1` FOREIGN KEY (`pessoas_marcadas`) REFERENCES `usuario` (`id_usuario`);
 
 --
 -- Restrições para tabelas `usuario`

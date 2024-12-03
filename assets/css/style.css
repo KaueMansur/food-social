@@ -15,6 +15,10 @@
     background-size: cover;
 }
 
+#body_white{
+    background-color: #fff;
+}
+
 #form_tabua_cadastro{
     margin-left: 150px;
     background-image: url(../img/tabua_retangular.png);
@@ -134,6 +138,10 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
+}
+
+.sub_header_small{
+    width: 20%;
 }
 
 #sub_header_config{
